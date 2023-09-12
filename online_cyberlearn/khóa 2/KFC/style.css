@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* list-style: none; */
+    border: none;
+}
+html{
+    /* font-size: 16px; */
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.header__1{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    height: 1.5rem;
+}
+.item__h1{
+    background-color: red;
+    width: 2rem;
+}
+.header__2{
+    width: 95%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header__login{
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-top: 2rem;
+}
+.header__login span:first-child{
+    color: red;
+    border-right: .1rem solid black;
+    padding: 0 8px;
+    
+}
+.header__login span:nth-child(2){
+    border-left: .3rem solid black;
+    padding: 0 8px;
+}
+
+
+/* nav */
+nav{
+    height: 8vh;
+    background-color: rgba(229, 231, 233, 0.801);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    /* height: 100%; */
+}
+nav ul li{
+    height: 100%;
+}
+nav ul li a{
+    /* height: 100%; */
+    color:black;
+    font-size: 1.5vw;
+    padding: 14px;
+}
+nav ul li a:hover{
+    background: black;
+    color: white;
+}
+
+/* crousel */
+.crousel{
+    background-image: url(./img/098308~1.PNG);
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+}
+.crousel .crousel__item{
+    background-color: white;
+    display: block;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 1px solid red;
+    margin: 0 10px;
+}
+.crousel .crousel__cricle{
+    position: absolute;
+    display: flex;
+    bottom: 20px;
+    left: 45vw;
+}
+.crousel .crousel__item:hover{
+    background-color: red;
+}
+
+/* combo */
+.combo{
+    margin: 30px 0;
+}
+.combo h1{
+    text-align: center;
+    margin: 25px 0;
+}
+.combo__item{
+    display: flex;
+    
+    justify-content: space-around;
+}
+.combo__context{
+    display: block;
+    width: 22%;
+    
+    box-shadow:0px 0px 20px -13px rgba(224, 219, 219, 0.966);
+}
+.combo__context img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.combo__context p{
+    font-size: 20px;
+    color: red;
+}
+.combo__context ul{
+    /* text-indent: 20px; */
+    list-style: none;
+}
+.combo__context ul li{
+    padding: 20px;
+}
+.combo__context h3{
+    padding: 10px 5px;
+}
+.combo__context .button{
+    display: flex;
+    justify-content: center;
+}
+.button button:last-child{
+    padding: 10px 20px;
+    background-color: rgb(255, 0, 128);
+    color: white;
+    font-weight: 500;
+    margin-left: 10px;
+    border-radius: 10px;
+    
+}
+.button button:first-child{
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-weight: 500;
+
+    border: 1px solid black;
+    /* background-color: red; */
+}
+
+/* intro */
+.intro{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+.intro__bgr1{
+    /* padding-right:5px; */
+    background-image: url(./img/55E251~1.PNG);
+    background-size: cover;
+    height: 230px;
+    width: 49%;
+}
+.intro__bgr2{
+    /* padding-left: 5px; */
+    background-image: url(./img/71705E~1.PNG);
+    background-size: cover;
+    height: 230px;
+    width: 49%;
+}
+
+/* FOOTER */
+footer{
+    background-color: rgb(245, 245, 245);
+   
+}
+footer .img__footer{
+    width: 30%;
+    margin: auto;
+    display: block;
+    padding-top: 60px;
+}
+.footer__text ul, .footer__contact ul{
+    list-style: none;
+    line-height: 30px;
+}
+
+.footer__item1{
+    padding: 30px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__contact{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__logo{
+    display: flex;
+}
+.footer__logo img{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+.footer__logo img:first-child{
+    margin-left: 100px;
+}
+#email{
+    width: 70%;
+    height: 35px;
+}
+.submit{
+    width: 25%;
+    height: 35px;
+    background-color: rgb(223, 84, 84);
+}
+
+
+
+
+
+
+
+
+

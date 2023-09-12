@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: #dee1e6;
+
+}
+.blog{
+    display: flex;
+    /* gap:5px ; */
+}
+.blog__left{
+    width: 65%;
+    margin: 15px;
+}
+.blog__right{
+    width: 30%;
+    margin: 15px;
+}
+.blog__left_info, .blog__right_info{
+    margin: 15px 0;
+    background-color: white;
+
+}
+.blog__left_info .left__img{
+    background-image: url(./img/assets/woods.jpg);
+    background-size: cover;
+    height: 250px;
+}
+.blog__left_info h1, .blog__right_info h1{
+    padding: 20px;
+}
+.blog__left_info h2{
+    padding: 0 20px 20px;
+}
+.blog__left_info p, .blog__right_info p{
+    padding: 0 20px 20px;
+}
+.blog__left_info .left__link{
+    padding: 15px 30px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.blog__left_info .left__img2{
+    background-image: url(./img/assets/bridge.jpg);
+    background-size: cover;
+    height: 300px;
+}
+.blog__right_info .right__img2{
+    background-image: url(./img/assets/avatar_g.jpg);
+    background-size: cover;
+    height: 200px;
+}
+.blog__right__item{
+    display: flex;
+    flex-direction: column;
+}
+.blog__right__item__1{
+    display: flex;
+    margin: 8px;
+}
+.blog__right__item__1 p{
+    padding-left: 5px;
+}
+.blog__right_info__tagName{
+    padding: 20px;
+}
+footer button:hover{
+    cursor: not-allowed;
+}

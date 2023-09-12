@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body  style="text-align: center;">
+    <h1>Đề bài</h1>
+    <p>cho mảng</p>
+    <br>
+    a=[3, -6 , 8, -9, -4, 5, 12]
+    <br>
+    1) tính tổng các số trong mảng a
+    <br>
+    2) tìm phẩn tử lớn nhất trong mảng a. xuất giá trị và chỉ số tại vị trí đó
+    <br>
+
+    3)tỉnh tổng các số lẻ trong mảng a
+    <br>
+    4) tìm số lớn nhất trong mảng a và xuất chỉ số
+    <!-- bài làm -->
+    <script>
+        var a = [3, -6 , 8, -9, -4, 5, 12,-4];
+        console.log(a);
+        // câu 1. tính tổng các số trong mảng a
+        //     giải thuật:
+        //     bước 1: khai báo biến tích lũy tổng
+        //     bước 2: duyệt vòng lặp
+        //     bước 3: tính tổng
+            // //    cách 1
+            // var tong = 0;
+            // for( var item of a){
+            //     console.log(item);
+            //     tong += item;
+            // }
+            // console.log("tổng là:",tong);
+
+            // // CÁCH 2
+            // var sum = 0;
+            // for (let index = 0; index < a.length; index++) {
+            //     console.log("index là:",a[index]);
+
+            //     sum += a[index];
+            // }
+            //     console.log("sum là:", sum);
+
+            // câu 2: tìm phần tử âm lớn nhất
+                // tìm max
+                    var max = Math.max.apply(null,a)
+                    console.log("max=",max);
+                // tìm min
+                    var min = Math.min.apply(null,a);
+                    console.log("min=",min);
+               //Khai báo mảng kết quả chứa mảng số dương và âm
+                let negative_array = [];
+                let positive_array = [];
+
+                //Sử dụng vòng lặp, kiểm tra số âm số dương và thêm vào mảng kết quả tương ứng
+                for (let i = 0; i < a.length; i++){
+                    if (a[i] < 0){
+                        negative_array.push(a[i]);
+                    }
+                    else{
+                        positive_array.push(a[i]);
+                    }
+                }
+                console.log(negative_array);
+                console.log(positive_array);
+                // số âm lớn nhất
+                var negative__max = Math.max.apply(null,negative_array);
+                console.log("số âm lớn nhất là:",negative__max);
+                // số dương nhỏ nhất
+                var positive__min = Math.min.apply(null, positive_array);
+                console.log("số dương nhỏ nhất là", positive__min);
+  
+
+
+    </script>
+</body>
+</html>

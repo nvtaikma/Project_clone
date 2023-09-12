@@ -1,0 +1,2 @@
+yt: https://www.youtube.com/watch?v=mYy-d6BtqmU
+sc: https://github.com/dejwid/mern-chat.git

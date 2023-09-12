@@ -1,0 +1,310 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.heading h2{
+    font-size: 40px;
+    color: #ff4f81;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+
+}
+.heading p{
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    font-size: 17px;
+    color: black;
+}
+.heading p::after{
+    content: "";
+    width: 70px;
+    height: 2px;
+    background-color: black;
+    display: block;
+    margin: 20px auto;
+}
+.section{
+    padding: 5rem 0;
+}
+.heading--white p{
+    color: white;
+}
+/* header */
+.header__top{
+    background-color: #ff4f81;
+    font-size: 14px;
+    
+}
+.header__top a{
+    text-decoration: none;
+    color: white;
+}
+.header__right a{
+    color: white;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 0.25rem;
+}
+.navIntruction a{
+    color: black;
+}
+.navIntruction .navbar-brand p:first-child{
+    font-size: 36px;
+
+}
+.navIntruction .navbar-brand p:last-child{
+    font-size: 11px;
+    color: #ff4f81;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.navIntruction .navbar-brand p:first-child i{
+    transform: skewX(-10deg);
+}
+#navbarIntruction .nav-link{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+}
+#navbarIntruction .nav-item{
+    margin: 0 15px;
+}
+#navbarIntruction .nav-item:hover .nav-link{
+    color: #ff4f81;
+
+}
+#navbarIntruction .nav-item::after{ 
+    display: block;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #ff4f81;
+    transition: all 0.5s;
+}
+#navbarIntruction .nav-item:hover::after{
+    width: 100%;
+}
+
+#navbarIntruction .nav-item:hover .nav-link{
+    color: #ff4f81;
+}
+#navbarIntruction .nav-item.active .nav-link{
+    color: #ff4f81;
+}
+#navbarIntruction .nav-item.active::after{
+    width: 100%;
+}
+#navbarIntruction .dropdown-menu{
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+#navbarIntruction .dropdown-item{
+    color: white;
+    transition: all 0.5s;
+}
+#navbarIntruction .dropdown-item:focus,#navbarIntruction .dropdown-item:hover{
+    background-color: transparent;
+    color: #ff4f81;
+}
+
+/* carousel */
+#carouselCyber .carousel-caption{
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#carouselCyber .carousel-caption h1{
+    font-size: 52px;
+
+}
+#carouselCyber .carousel-caption p{
+    letter-spacing: 4px;
+    line-height: 1.8rem;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+#carouselCyber .carousel-caption button{
+    padding: 11px 20px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+#carouselCyber .carousel-caption button:hover{
+    border-color: #ff4f81;
+    background-color: #ff4f81;
+}
+/* wellcome */
+.welcome__content>p{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+    color: #999;
+    padding: 1rem 0 5rem;
+    line-height: 1.8em;
+    letter-spacing: 1px;
+
+}
+.welcom__item i{
+    font-size: 2rem;
+
+}
+.welcom__item h3{
+    color: #ff4f81;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+.welcom__item{
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem 0 0.2rem;
+}
+.welcom__item p{
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    color: #999;
+    margin: 10px 0 0;
+}
+.welcome__col{
+    padding: 2rem;
+}
+/* ourstart */
+.ourstart h3{
+    color: #ff4f81;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 30px 0 20px;
+    letter-spacing: 3px;
+}
+.ourstart p{
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 300;
+
+}
+.ourstart{
+    background-image: url(../img/banner2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.ourstart i{
+    font-size: 2rem;
+}
+.ourstart__content{
+    color: white;
+}
+/* offer */
+.offer__col{
+    padding: 15px;
+}
+.offer__item{
+    padding: 25px 40px;
+    box-shadow: 0px 1px 8px 0px rgb(158 158 158 / 75%);
+    text-align: center;
+    background-color: white;
+    transition: all 0.5s;
+}
+.offer__item i{
+    color: #ff4f81;
+    font-size: 40px;
+}
+.offer__item h3 {
+    font-size: 20px;
+    color: black;
+    margin: 25px 0 20px;
+}
+.offer__item p {
+    color: #6b6b6b;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+.offer__item:hover {
+    background-color: #12ccc3;
+}
+
+/* feedback */
+.feedback{
+    /* background-image: url(../img/banner3.jpg);
+    background-position: center; */
+    background:url(../img/banner3.jpg) center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.feedback__content{
+    box-shadow: 0px 1px 7px #8e8e8e;
+    background-color: rgba(0, 0, 0, 0.47);
+    padding: 1rem;
+}
+.feedback__content .item{
+    color: white;
+    padding: 1rem;
+}
+.feedback__top {
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.47);
+    position: relative;
+}
+.feedback__content .item .feedback__botom img{
+    width: 28%;
+    display: inline-block;
+}
+.feedback__botom{
+    display: flex;
+    justify-content: center;
+    width: 55%;
+    margin: 2rem auto;
+}
+.feedback__name p{
+    margin: 0;
+    color: #ff4f81;
+
+}
+.feedback__name p:first-child{
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.feedback__top::after{
+    content: '';
+    border-top: 9px solid rgba(0, 0, 0, 0.47);
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    position: absolute;
+    top: 100%;
+    left: 28%;
+
+}
+.feedback__content .owl-theme .owl-dots .owl-dot span{
+    background-color: #ff4f81;
+    opacity: 0.5;
+}
+.feedback__content .owl-theme .owl-dots .owl-dot.active span, .feedback__content .owl-theme .owl-dots .owl-dot:hover span{
+    opacity: 1;
+}
+.feedback__content .owl-theme .owl-dots .owl-dot:focus{
+outline: none;
+}
+
+
+
+
+

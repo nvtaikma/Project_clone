@@ -1,0 +1,156 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+html, body{
+    font-family: 'Times New Roman', Times, serif;
+}
+.clear{
+    clear: both;
+}
+h2{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.intro img, .programs img, .news img {
+    margin: 15px 0 25px;
+}
+/* header */
+.header{
+    margin-bottom: 25px;
+}
+.header__logo .img_logo{
+    float: left;
+}
+.header__logo .img_slogan{
+    float: right;
+    margin-right: 120px;
+}
+.header__navbar ul{
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid rgb(224, 221, 221);
+    border-bottom: 1px solid rgb(224, 221, 221) ;
+    list-style: none;
+}
+.header__navbar ul li{
+    display: inline;
+    
+}
+.header__navbar ul li:first-child{
+    border-bottom: 3px solid red;
+}
+.header__navbar ul li:hover{
+    border-bottom: 3px solid red;
+
+}
+.header__navbar ul li a{
+    font-size: 1.13vw;
+    padding: 0 0.3vw;
+    font-weight: bold;
+
+    text-decoration: none;
+    color: rgb(117, 115, 115);
+    text-transform: uppercase;
+
+}
+/* crousel */
+.crousel{
+    background-image: url(../img/slider_1.png);
+    height: 500px;
+    background-size: cover;
+}
+/* intro */
+.intro {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+/* programs */
+.programs{
+    text-align: center;
+    margin: 35px 0;
+}
+.programs .programs__item{
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+.programs__item img{
+    width: 100%;
+}
+
+.programs__item h4{
+    color: red;
+    float: left;
+}
+.programs__item p{
+    float: left;
+    margin: 10px 0;
+}
+/* news */
+.news{
+    text-align: center;
+    margin: 35px 0;
+}
+.news__text{
+    position: relative;
+}
+.text{
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    left: 0px;  
+    width: 100%;
+    background-color: rgba(89, 82, 73, 0.803);
+}
+.news .news__left, .news .news__right{
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+.news .news__left img, .news .news__right img{
+margin: 0;
+}
+.news__text img{
+    width: 100%;
+}
+.news__right .small{
+    width: 50%;
+    float: left;
+    padding: 0 5px 1px 5px;
+    /* position: relative; */
+}
+.news__small{
+    position: relative;
+}
+hr{
+    margin: 0;
+    height: 5px;
+    background-color: #B31C25;
+    margin-top: 1px;
+}
+
+
+/* footer */
+.footer{
+    background-color: brown;
+    padding: 25px 50px;
+}
+.footer__text{
+    float: right;
+    width: 50%;
+   word-spacing: 2px;
+   text-align: justify;
+    color: white;
+}
+
+
+
+
+
+
+

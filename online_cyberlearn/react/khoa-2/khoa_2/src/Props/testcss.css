@@ -1,0 +1,12 @@
+#btnt{
+    
+    display: none;
+    transition: width 1s, height 1s;
+}
+.card{
+    height: 470px;
+}
+.card-hover :hover #btnt{
+    display: block;
+    
+}

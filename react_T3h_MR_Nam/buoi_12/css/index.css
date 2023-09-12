@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+.h-top {
+    padding: 0 45px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.h-top > div:first-child {
+    padding: 16px 0;
+}
+
+.h-info {
+    display: flex;
+    height: 48px;
+    justify-content: space-between;
+    border-bottom: 1px solid #151515;
+    padding-bottom: 16px;
+}
+
+.h-left-infor {
+    display: flex;
+}
+
+.h-left-infor a {
+    color: #6A983C;
+    text-decoration: none;
+    margin-right: 33px;
+}
+
+.h-left-infor p {
+    margin-right: 33px;
+}
+
+.h-right-infor a {
+    color: #6A983C;
+    margin-left: 38px;
+    text-decoration: none;
+}
+
+.h-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 0;
+}
+
+.h-search {
+    width: 500px;
+    height: 42px;
+    border-radius: 12px;
+    border: 1px solid #D1D1D1;
+    display: flex;
+    padding: 10px 16px;
+}
+
+.logo-searching {
+    width: 154px;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #D1D1D1;
+}
+
+.logo-searching img:last-child {
+    margin-left: 13px;
+}
+
+.h-input {
+    position: relative;
+    background-color: red;
+    width: 320px;
+}
+
+.h-input input {
+    width: 100%;
+    height: 100%;
+    padding: 0 24px;
+    outline: none;
+    border: none;
+    color: #A9A9A9;
+}
+
+.h-input img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.h-user-info {
+    display: flex;
+}
+
+.h-user-info a > img {
+    margin-right: 42px;
+}
+
+.h-cart {
+    position: relative;
+}
+
+.h-cart p {
+    position: absolute;
+    bottom: -4px;
+    left: -8px;
+    width: 16px;
+    height: 18px;
+    background: #E6704B;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    line-height:18px;
+}
+
+.h-categories ul {
+    display: flex;
+    list-style: none;
+    padding: 16px 45px;
+    background-color: #F9F9F9;
+}
+
+.h-categories ul li {
+    margin-right: 45px;
+}
+
+.h-categories ul li a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.h-categories ul li a img {
+    margin-left: 6px;
+}
+
+.main-categories {
+    padding: 0 45px;
+    display: flex;
+}
+
+.nav-category {
+    width: 20%;
+}
+
+.nav-category-item {
+    padding: 64px 0;
+}
+
+.nav-category-item h2 {
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Poppins';
+    margin-bottom: 16px;
+}
+
+.nav-category-item ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nav-category-item ul li a {
+    color: #6A983C;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.btn-more-category {
+    width: 179px;
+    height: 48px;
+    background-color: #F5F5F5;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 48px;
+}
+
+.list-product {
+    width: 80%;
+    padding-left: 32px;
+}
+
+.space-for-heading {
+    padding: 64px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.space-item {
+    width: 48%;
+    height: 280px;
+    background: #C8DEB3;
+    border-radius: 12px;
+    padding: 48px 0 28px 32px;
+}
+
+.space-item p {
+    font-weight: 600;
+    font-size: 12px;
+    color: #6A983C;
+    margin-bottom: 8px;
+}
+
+.space-item h2 {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 96px;
+}
+
+.space-item button {
+    width: 163px;
+    height: 47px;
+    border: 2px solid #92C064;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 12px;
+    background-color: none;
+    cursor: pointer;
+}
+
+.space-item button img {
+    margin-left: 12px;
+}
+
+.product-item {
+    width: 269px;
+    padding: 16px;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    margin: 64px 0;
+}
+
+.img-container {
+    position: relative;
+    /* width: 100%;
+    height: 100%; */
+}
+.img-container img {
+    width: 100%;
+    height: 235px;
+}
+
+.img-container p {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    color: #6A983C;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+}
+
+.product-item h3 {
+    font-weight: 900;
+    font-size: 15px;
+    margin-top: 16px;
+    color: #151515;
+
+    /* ẩn text */
+    display: block;
+  	display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+
+.product-item > p {
+    color: #575757;
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 21px;
+}
+
+.price p:first-child {
+    font-weight: 600;
+    font-size: 18px;
+    color: #151515;
+    text-decoration-line: none;
+}
+
+.price p {
+    color: #A9A9A9;
+    text-decoration-line: line-through;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.price button {
+    width: 90px;
+    height: 36px;
+    background: #6A983C;
+    border: 2px solid #46760A;
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.readOurBlog {
+    padding: 0 45px;
+}
+
+.readOurBlog h2 {
+    margin: 69px 0 36px 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #151515;
+}
+
+.wrapperBlog {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 32px;
+    padding-bottom:64px;
+}
+
+.dinnerTips {
+    position: relative;
+    width: 48%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.dinnerTips img {
+    width: 100%;
+    height: 100%;
+}
+
+.dinnerTips button {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    background: #F4F8EC;
+    border-radius: 12px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #6A983C;
+    border: none;
+    padding: 0 8px;
+    cursor: pointer;
+    outline: none;
+}
+
+.dinnerTips h2 {
+    position: absolute;
+    bottom: 32px;
+    left: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #fff;
+    width: 380px;
+    height: 66px;
+}
+
+.dinnerTips div {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.dinnerTips div img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    object-fit: contain;
+}
+
+.dinnerTips div span {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
+    margin-right: 16px;
+}
+
+.vegetableBlog {
+    max-width: 269px;
+}
+.vegetableBlog button {
+    margin: 24px 0 8px 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #6A983C;
+    width: 80px;
+    height: 18px;
+    background: #F4F8EC;
+    border-radius: 12px;
+    border: none;
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+.vegetableBlog h2 {
+    font-size: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #151515;
+    margin-top: 8px;
+}
+
+.vegetableBlog div {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.vegetableBlog div span {
+    margin-top: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #151515;
+}
+
+.list-common-blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list-common-blog > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-common-blog > div div {
+    width: 249px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list-common-blog > div > div h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #151515;
+    margin-top: 4px;
+}
+
+.list-common-blog > div > div div {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+    /* C1/A */
+
+    color: #151515;
+    display: flex;
+    gap: 16px;
+}
+
+
+@media screen and (max-width: 728px) {
+    .dinnerTips {
+        display: none;
+    }
+    .vegetableBlog {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 729px) and (max-width: 924px) {
+    .dinnerTips {
+        display: block;
+        width: 100%;
+    }
+    .vegetableBlog {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 925px) and (max-width: 1279px) {
+    .vegetableBlog {
+        display: none;
+    }
+}

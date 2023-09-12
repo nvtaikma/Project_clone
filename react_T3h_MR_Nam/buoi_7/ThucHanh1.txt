@@ -1,0 +1,239 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package ThucHanh;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author HP
+ */
+public class ThucHanh1 {
+
+    public static Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        System.out.println("áda");
+//        bai2(3, 7, 3);
+//        bai3();
+//        bai4();
+//        bai5();
+//        bai6();
+//        bai7();
+//        bai8();
+//        bai10(15, 18);
+//        bai11();
+//        bai12(); //bai 12 chua lam
+    }
+
+    public static void bai2(int a, int b, int c) {
+        float delta = (float) Math.sqrt(Math.pow(b, 2) - 4 * a * c);
+        if (a == 0) {
+            System.out.println("phuong trinh k phai bac 2");
+        } else if (delta > 0) {
+            float nghiem1 = (-b + (float) Math.sqrt(delta)) / 2 * a * c;
+            float nghiem2 = (-b - (float) Math.sqrt(delta)) / 2 * a * c;
+            System.out.println("phuong trinh co hai nghiem: ");
+            System.out.println("nghiem 1: " + nghiem1);
+            System.out.println("nghiem 2: " + nghiem2);
+        } else if (delta == 0) {
+            float nghiemc = -b / (2 * a);
+            System.out.println("phuong trinh co 2 nghiem chung la: x = " + nghiemc);
+        } else {
+            System.out.println("phuong trinh vo nghiem");
+        }
+    }
+    // 3.	Viết một chương trình hiển thị tổng các bội số của 7 nằm giữa 1 và 100.
+
+    public static void bai3() {
+        System.out.print("các số chia hết cho 7 là: ");
+        for (int i = 1; i <= 100; i++) {
+
+            if (i % 7 == 0) {
+                if (i != 7) {
+                    System.out.print(", ");
+                }
+                System.out.print(i);
+            }
+        }
+        System.out.println("");
+    }
+//    4.	Viết chương trình chuyển đổi một số tự nhiên cho trước ở hệ cơ số 10 thành số ở hệ cơ số b bất kì (1< b≤ 36).
+
+    public static void bai4() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Nhap so tu nhien n: ");
+        int n = sc.nextInt();
+        System.out.print("Nhap he co so b: ");
+        int b = sc.nextInt();
+        System.out.print("so tu nhien " + n + "trong he co so " + b + "la: ");
+        if (n < 0) {
+            System.out.println("n khong phai so tu nhien");
+        } else if (n == 0) {
+            System.out.print("0");
+        } else {
+            int d;
+            while (n > 0) {
+                d = n % b;
+                n /= b;
+                System.out.print(d);
+            }
+        }
+        System.out.println("");
+    }
+//5.	Viết chương trình để cộng bảy số hạng của dãy sau: 1!+2!+3!…
+
+    public static void bai5() {
+        int s = 0, n;
+        System.out.print("Nhap N: ");
+        n = sc.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+            int temp = 0;
+            for (int j = 1; j <= i; j++) {
+                temp += j;
+            }
+            s += temp;
+        }
+        System.out.println("Tong S = " + s);
+    }
+
+    //6.	In ra màn hình 10 số Fibonaci đầu tiên.
+    public static void bai6() {
+        int fibo1 = 1, fibo2 = 2;
+        System.out.print("day so fibonaci: " + fibo1 + ", " + fibo2);
+        for (int i = 3; i <= 10; i++) {
+            System.out.print(", ");
+            System.out.print(fibo1 + fibo2);
+            int temp = fibo2;
+            fibo2 += fibo1;
+            fibo1 = temp;
+        }
+    }
+
+    //7.	In ra màn hình các số nguyên tố từ 2 đến 100.
+    public static void bai7() {
+        System.out.print("cac so nguyen to tu 0 den 100 la: ");
+        for (int i = 2; i < 100; i++) {
+            int check = 0;
+            for (int j = 2; j < Math.sqrt(i); j++) {
+                if (i % j == 0) {
+                    check = 1;
+                }
+            }
+            if (check == 0) {
+                if (i != 2) {
+                    System.out.print(", ");
+                }
+                System.out.print(i);
+            }
+        }
+    }
+
+    //8.	Viết chương trình phân tích một số nguyên cho trước thành các thừa số nguyên tố.
+    //Ví dụ: Số 28 được phân tích thành 2*2*7.
+    public static int ngto(int n) {
+        int i = 0;
+        int check = 0;
+        for (int j = 2; j <= Math.sqrt(n); j++) {
+            if (n % j == 0) {
+                check = 1;
+                break;
+            }
+        }
+        if (check == 0) {
+            return 1;
+        }
+        return 0;
+    }
+
+    public static void bai8() {
+        System.out.print("Nhap N: ");
+        int n = sc.nextInt();
+        int temp = n;
+        if (n < 1) {
+            System.out.print("N khong phu hop!");
+        } else {
+//            System.out.print("" + n + " = ");
+
+            while (n > 0) {
+                for (int i = 2; i <= n; i++) {
+                    if (ngto(i) == 1) {
+                        if (n % i == 0) {
+                            if (n != temp) {
+                                System.out.print(" * ");
+                            }
+                            System.out.print(i);
+                            n /= i;
+                            break;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    //10.	Tìm USCLN của hai số a, b cho trước.
+    public static void bai10(int a, int b) {
+        if (a < 0 || b < 0) {
+            System.out.println("a va b phai lon hon 0");
+        } else if (a == 0 || b == 0) {
+            System.out.println("UCLN cua" + a + " va " + b + " la: 0");
+        } else {
+            while (a != b) {
+                if (a > b) {
+                    a -= b;
+                } else {
+                    b -= a;
+                }
+            }
+            System.out.println("UCLN la: " + a);
+        }
+    }
+
+    //11.Một số được gọi là số thuận nghịch độc nếu ta đọc từ trái sang phải hay từ phải
+    //sang trái số đó ta vẫn nhận được một số giống nhau. 
+    //Hãy liệt kê tất cả các số thuận nghịch độc có sáu chữ số (Ví dụ số: 558855).
+    public static void bai11() {
+        System.out.print("Nhap N: ");
+        int n = sc.nextInt();
+        if (n < 10 && n >= 0) {
+            System.out.println("La so thuan nghich");
+        } else if (n < 0) {
+            n = -n;
+        }
+
+        while (n > 0) {
+            if (n < 10 && n >= 0) {
+                System.out.println("La so thuan nghich");
+                return;
+            }
+            int d = n % 10, boi = 0;
+            n /= 10;
+            int temp = n;
+            while (temp / 10 > 0) {
+                temp /= 10;
+                boi++;
+            }
+            if (d != temp) {
+                System.out.println("ko la so thuan nghich");
+                return;
+            }
+            n = n % (int) Math.pow(10, boi);
+//            System.out.println("d = " + d + " temp = " + temp + " boi = " + boi + " n = " + n);
+        }
+    }
+    //12.	Viết chương trình liệt kê tất cả các hoán vị của 1, 2..., n với n cho trước.
+//    public static void bai12() {
+//        System.out.print("Nhap N: ");
+//        int n = sc.nextInt();
+//        int A[] = new int[n+1];
+//        for(int i = 0; i <= n; i++) {
+//            A[i] = i;
+//        }
+//        
+//    }
+}
